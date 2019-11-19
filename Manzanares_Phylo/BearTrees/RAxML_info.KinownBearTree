@@ -1,0 +1,118 @@
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 195 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 0.00%
+
+RAxML rapid bootstrapping and subsequent ML search
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+
+Executing 2 rapid bootstrap inferences and thereafter a thorough ML search 
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 195
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-PTHREADS-AVX -T 8 -f a -m GTRGAMMA -p 618 -N 2 -x 309 -s KnownBears.aln -n KinownBearTree -w /project/inbre-train/inbre001/molb4485/Manzanares_Phylo/BearTrees -o Ailuropoda_melanoleuca_Giant_Panda 
+
+
+
+Time for BS model parameter optimization 0.014712
+Bootstrap[0]: Time 0.032705 seconds, bootstrap likelihood -4124.481420, best rearrangement setting 6
+Bootstrap[1]: Time 0.026526 seconds, bootstrap likelihood -3904.435461, best rearrangement setting 5
+
+
+Overall Time for 2 Rapid Bootstraps 0.183170 seconds
+Average Time per Rapid Bootstrap 0.091585 seconds
+
+Starting ML Search ...
+
+Fast ML optimization finished
+
+Fast ML search Time: 0.083544 seconds
+
+Slow ML Search 0 Likelihood: -3920.617232
+Slow ML optimization finished
+
+Slow ML search Time: 0.048232 seconds
+Thorough ML search Time: 0.048513 seconds
+
+Final ML Optimization Likelihood: -3920.617231
+
+Model Information:
+
+Model Parameters of Partition 0, Name: No Name Provided, Type of Data: DNA
+alpha: 0.195289
+Tree-Length: 1.182993
+rate A <-> C: 18.938956
+rate A <-> G: 627.824857
+rate A <-> T: 13.271200
+rate C <-> G: 13.647228
+rate C <-> T: 632.119595
+rate G <-> T: 1.000000
+
+freq pi(A): 0.287524
+freq pi(C): 0.294834
+freq pi(G): 0.145614
+freq pi(T): 0.272027
+
+
+ML search took 0.181998 secs or 0.000051 hours
+
+Combined Bootstrap and ML search took 0.365269 secs or 0.000101 hours
+
+Drawing Bootstrap Support Values on best-scoring ML tree ...
+
+
+
+Found 1 tree in File /project/inbre-train/inbre001/molb4485/Manzanares_Phylo/BearTrees/RAxML_bestTree.KinownBearTree
+
+
+
+Found 1 tree in File /project/inbre-train/inbre001/molb4485/Manzanares_Phylo/BearTrees/RAxML_bestTree.KinownBearTree
+
+Program execution info written to /project/inbre-train/inbre001/molb4485/Manzanares_Phylo/BearTrees/RAxML_info.KinownBearTree
+All 2 bootstrapped trees written to: /project/inbre-train/inbre001/molb4485/Manzanares_Phylo/BearTrees/RAxML_bootstrap.KinownBearTree
+
+Best-scoring ML tree written to: /project/inbre-train/inbre001/molb4485/Manzanares_Phylo/BearTrees/RAxML_bestTree.KinownBearTree
+
+Best-scoring ML tree with support values written to: /project/inbre-train/inbre001/molb4485/Manzanares_Phylo/BearTrees/RAxML_bipartitions.KinownBearTree
+
+Best-scoring ML tree with support values as branch labels written to: /project/inbre-train/inbre001/molb4485/Manzanares_Phylo/BearTrees/RAxML_bipartitionsBranchLabels.KinownBearTree
+
+Overall execution time for full ML analysis: 0.367092 secs or 0.000102 hours or 0.000004 days
+

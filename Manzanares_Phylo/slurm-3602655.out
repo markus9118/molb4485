@@ -1,0 +1,142 @@
+Starting ramxlHPC run at Tue Nov 19 13:56:58 MST 2019
+Warning, you specified a working directory via "-w"
+Keep in mind that RAxML only accepts absolute path names, not relative ones!
+
+RAxML can't, parse the alignment file as phylip file 
+it will now try to parse it as FASTA file
+
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+This is the RAxML Master Pthread
+
+This is RAxML Worker Pthread Number: 2
+
+This is RAxML Worker Pthread Number: 5
+
+This is RAxML Worker Pthread Number: 3
+
+This is RAxML Worker Pthread Number: 6
+
+This is RAxML Worker Pthread Number: 7
+
+This is RAxML Worker Pthread Number: 4
+
+This is RAxML Worker Pthread Number: 1
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 226 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 3.64%
+
+RAxML rapid bootstrapping and subsequent ML search
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+
+Executing 2 rapid bootstrap inferences and thereafter a thorough ML search 
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heterogeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 226
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-PTHREADS-AVX -T 8 -f a -m GTRGAMMA -p 618 -N 2 -x 309 -s AllBears.aln -n AllBearsTree -w /project/inbre-train/inbre001/molb4485/Manzanares_Phylo/AllBears -o Ailuropoda_melanoleuca_Giant_Panda 
+
+
+
+Time for BS model parameter optimization 0.030843
+Bootstrap[0]: Time 1.394111 seconds, bootstrap likelihood -4248.333703, best rearrangement setting 6
+Bootstrap[1]: Time 0.042643 seconds, bootstrap likelihood -3998.184802, best rearrangement setting 5
+
+
+Overall Time for 2 Rapid Bootstraps 1.682619 seconds
+Average Time per Rapid Bootstrap 0.841309 seconds
+
+Starting ML Search ...
+
+Fast ML optimization finished
+
+Fast ML search Time: 0.142818 seconds
+
+Slow ML Search 0 Likelihood: -4070.168430
+Slow ML optimization finished
+
+Slow ML search Time: 0.087649 seconds
+Thorough ML search Time: 0.074421 seconds
+
+Final ML Optimization Likelihood: -4070.168440
+
+Model Information:
+
+Model Parameters of Partition 0, Name: No Name Provided, Type of Data: DNA
+alpha: 0.205923
+Tree-Length: 1.120057
+rate A <-> C: 19.573336
+rate A <-> G: 622.601008
+rate A <-> T: 13.620430
+rate C <-> G: 14.464600
+rate C <-> T: 627.164503
+rate G <-> T: 1.000000
+
+freq pi(A): 0.286644
+freq pi(C): 0.296732
+freq pi(G): 0.146063
+freq pi(T): 0.270561
+
+
+ML search took 0.307247 secs or 0.000085 hours
+
+Combined Bootstrap and ML search took 1.989975 secs or 0.000553 hours
+
+Drawing Bootstrap Support Values on best-scoring ML tree ...
+
+
+
+Found 1 tree in File /project/inbre-train/inbre001/molb4485/Manzanares_Phylo/AllBears/RAxML_bestTree.AllBearsTree
+
+
+
+Found 1 tree in File /project/inbre-train/inbre001/molb4485/Manzanares_Phylo/AllBears/RAxML_bestTree.AllBearsTree
+
+Program execution info written to /project/inbre-train/inbre001/molb4485/Manzanares_Phylo/AllBears/RAxML_info.AllBearsTree
+All 2 bootstrapped trees written to: /project/inbre-train/inbre001/molb4485/Manzanares_Phylo/AllBears/RAxML_bootstrap.AllBearsTree
+
+Best-scoring ML tree written to: /project/inbre-train/inbre001/molb4485/Manzanares_Phylo/AllBears/RAxML_bestTree.AllBearsTree
+
+Best-scoring ML tree with support values written to: /project/inbre-train/inbre001/molb4485/Manzanares_Phylo/AllBears/RAxML_bipartitions.AllBearsTree
+
+Best-scoring ML tree with support values as branch labels written to: /project/inbre-train/inbre001/molb4485/Manzanares_Phylo/AllBears/RAxML_bipartitionsBranchLabels.AllBearsTree
+
+Overall execution time for full ML analysis: 1.991848 secs or 0.000553 hours or 0.000023 days
+
+RAxML has finished at Tue Nov 19 13:57:01 MST 2019
